@@ -1,6 +1,6 @@
 # Moon
 
-The open @spaceblogpage about our planet's natural satellite. 
+The open @openspaceblog about our planet's natural satellite. 
 
 https://openspaceblog.github.io/moon
 
