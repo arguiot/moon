@@ -39,16 +39,6 @@ var light = new THREE.PointLight(0xfff0e8, 1.8);
 light.position.set(0, 100, -160)
 scene.add(light)
 
-requestAnimationFrame(render)
-
-function render() {
-    moon.rotation.x -= .00005
-    renderer.render(scene, camera);
-    requestAnimationFrame(render)
-}
-
-render()
-
 function resize() {
     var w = window.innerWidth;
     var h = 600;

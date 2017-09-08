@@ -142,7 +142,7 @@ header {
     flex-direction: column;
     text-align: center;
     position: relative;
-    margin-bottom: 125vh;
+    margin-bottom: 600px;
     h1 {
         font-size: 72px;
         font-weight: 400;
@@ -164,9 +164,89 @@ header {
     }
 }
 
+main {
+    h1 {
+        font-weight: 400;
+        margin: 64px 0;
+    }
+}
 
+.phase-selector {
+    margin: 128px 0;
+    text-align: center;
+    button {
+        box-sizing: border-box;
+        display: inline-block;
+        height: 32px;
+        width: 32px;
+        background-color: transparent;
+        border: 3px solid #fff;
+        border-radius: 100%;
+        margin-right: 79px;
+        position: relative;
+        cursor: pointer;
+        background-color: #000;
+        outline: 0;
+        &::before {
+            content: '';
+            height: 3px;
+            width: 90px;
+            position: absolute;
+            right: -90px;
+            background-color: #fff;
+            z-index: -1;
+        }
+        &:last-child {
+            margin-right: 0;
+            &::before {
+                display: none;
+            }
+        }
+        &:nth-child(2) {
+            box-shadow: inset 5px 0 0 #fff;
+        }
+        &:nth-child(8) {
+            box-shadow: inset -5px 0 0 #fff;
+        }
+        &:nth-child(3)::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            left: 0;
+            top: 0;
+            background-color: #fff;
+            border-radius: 50% 0 0 50%;
+        }
+        &:nth-child(7)::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 50%;
+            top: 0;
+            background-color: #fff;
+            border-radius: 0 50% 50% 0;
+        }
+        &:nth-child(4) {
+            background-color: #fff;
+            box-shadow: inset -7px 0 0 #000;
+        }
+        &:nth-child(6) {
+            background-color: #fff;
+            box-shadow: inset 7px 0 0 #000
+        }
+        &:nth-child(5) {
+            background-color: #fff;
+        }
+    }
+}
 
-
+#phases {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+}
 
 
 
@@ -267,12 +347,44 @@ header {
    Modify as content requires.
    ========================================================================== */
 
+@media (max-width: 1200px) {
+    .phase-selector button {
+        margin-right: calc((80vw - (32px*9)) / 9);
+    }
+}
+
+@media (max-width: 960px) {
+    .phase-selector button:nth-child(2n) {
+        display: none;
+    }
+    .phase-selector button {
+        margin-right: 70px;
+        &::before {
+            width: 80px;
+            right: -80px;
+        }
+    }
+}
+
 @media (max-width: 840px) {
     .share {
         left: 52px;
     }
     .menu-button {
         right: 52px;
+    }
+}
+
+@media (max-width: 575px) {
+    .phase-selector button {
+        margin-right: 45px;
+        &::before {
+            width: 60px;
+            right: -60px;
+        }
+    }
+    #phases {
+        height: 400px;
     }
 }
 
@@ -289,6 +401,17 @@ header {
 
     .share > * {
         margin-bottom: 24px;
+    }
+
+    .phase-selector button {
+        margin-right: 20px;
+        &::before {
+            width: 30px;
+            right: -30px;
+        }
+    }
+    #phases {
+        height: 300px;
     }
 }
 

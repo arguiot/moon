@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://unpkg.com/waffle-grid">
         <link rel="stylesheet" href="/moon/css/normalize.css">
         <link rel="stylesheet" href="/moon/css/main.css">
     </head>
@@ -37,7 +38,32 @@
             <canvas id="moon"></canvas>
         </header>
 
+        <main>
+            <div class="container">
+                <!-- <h1>Overview</h1> -->
+                <p>The moon is the earth's only natural permanent satellite, and is the dominant body in our night sky. It is the only celestial body appart from earth that humans have set foot on. From earth, it appears to be about the same size as the sun, which is why we have total solar eclipses that still allow us to observe the sun's corona. Due to it's rotation, we can only see one side of our moon from earth.</p>
+
+                <h1>Phases</h1>
+
+                <canvas id="phases"></canvas>
+
+                <div class="phase-selector">
+                    <button data-phase="0"></button>
+                    <button data-phase="1"></button>
+                    <button data-phase="2"></button>
+                    <button data-phase="3"></button>
+                    <button data-phase="4"></button>
+                    <button data-phase="5"></button>
+                    <button data-phase="6"></button>
+                    <button data-phase="7"></button>
+                    <button data-phase="8"></button>
+                </div>
+            </div>
+        </main>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/87/three.min.js"></script>
+        <script src="/moon/js/main.js"></script>
         <script src="/moon/js/3d.js"></script>
+        <script src="/moon/js/phases.js"></script>
     </body>
 </html>
