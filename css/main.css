@@ -87,29 +87,26 @@ body {
   body a {
     color: inherit; }
 
-nav#overlay {
-  position: fixed;
+.share {
   font-size: 24px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; }
-  nav#overlay .share {
-    position: absolute;
-    left: 144px;
-    top: 52px;
-    display: flex;
-    flex-direction: column;
-    text-align: center; }
-    nav#overlay .share > * {
-      margin-bottom: 32px;
-      text-decoration: none; }
-  nav#overlay .menu-button {
-    position: absolute;
-    right: 144px;
-    top: 52px; }
-    nav#overlay .menu-button * {
-      text-decoration: none; }
+  position: fixed;
+  left: 144px;
+  top: 52px;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  .share > * {
+    margin-bottom: 32px;
+    text-decoration: none; }
+
+.menu-button {
+  position: fixed;
+  right: 144px;
+  top: 52px;
+  font-size: 24px;
+  z-index: 900; }
+  .menu-button * {
+    text-decoration: none; }
 
 header {
   display: flex;
@@ -124,12 +121,12 @@ header {
     font-size: 72px;
     font-weight: 400;
     margin: 0;
-    line-height: 10 / 7; }
+    line-height: 1.4285714286; }
   header h3 {
     font-size: 32px;
     font-weight: 400;
     margin: 0;
-    line-height: 10 / 7; }
+    line-height: 1.4285714286; }
   header #moon {
     height: 600px;
     width: 100vw;
@@ -215,8 +212,21 @@ header {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */ }
+@media (max-width: 840px) {
+  .share {
+    left: 52px; }
+
+  .menu-button {
+    right: 52px; } }
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 48px;
+    margin-top: 20vh; }
+  header h3 {
+    font-size: 24px; }
+
+  .share > * {
+    margin-bottom: 24px; } }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
 /* ==========================================================================

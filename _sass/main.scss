@@ -1,5 +1,7 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
+// sass --watch _sass/main.scss:css/main.css
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -107,32 +109,28 @@ body {
     }
 }
 
-nav#overlay {
-    position: fixed;
+.share {
     font-size: 24px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    .share {
-        position: absolute;
-        left: 144px;
-        top: 52px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        > * {
-            margin-bottom: 32px;
-            text-decoration: none;
-        }
+    position: fixed;
+    left: 144px;
+    top: 52px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    > * {
+        margin-bottom: 32px;
+        text-decoration: none;
     }
-    .menu-button {
-        position: absolute;
-        right: 144px;
-        top: 52px;
-        * {
-            text-decoration: none;
-        }
+}
+
+.menu-button {
+    position: fixed;
+    right: 144px;
+    top: 52px;
+    font-size: 24px;
+    z-index: 900;
+    * {
+        text-decoration: none;
     }
 }
 
@@ -149,13 +147,13 @@ header {
         font-size: 72px;
         font-weight: 400;
         margin: 0;
-        line-height: 10 / 7;
+        line-height: (10 / 7);
     }
     h3 {
         font-size: 32px;
         font-weight: 400;
         margin: 0;
-        line-height: 10 / 7;
+        line-height: (10 / 7);
     }
 
     #moon {
@@ -269,8 +267,29 @@ header {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media (max-width: 840px) {
+    .share {
+        left: 52px;
+    }
+    .menu-button {
+        right: 52px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        h1 {
+            font-size: 48px;
+            margin-top: 20vh;
+        }
+        h3 {
+            font-size: 24px;
+        }
+    }
+
+    .share > * {
+        margin-bottom: 24px;
+    }
 }
 
 @media print,
