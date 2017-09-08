@@ -19,7 +19,7 @@ var scene = new THREE.Scene();
 function loadTextures() {
     var loader = new THREE.TextureLoader()
     
-    moonColor = loader.load('/moon/img/moon-color-2048.jpg')
+    moonColor = loader.load('/moon/img/moon-color-patched-2048.jpg')
     moonNormal = loader.load('/moon/img/moon-normal-1024.jpg')
 }
 
