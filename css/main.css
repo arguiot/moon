@@ -80,7 +80,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-  background-color: #000000;
+  background-color: #020304;
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   overflow-x: hidden; }
@@ -133,9 +133,14 @@ header {
     position: absolute;
     bottom: -600px; }
 
+.fade {
+  height: 300px;
+  width: 100vw;
+  background: linear-gradient(to bottom, #000000 0%, #020304 100%); }
+
 main h1 {
   font-weight: 400;
-  margin: 64px 0; }
+  margin: 128px 0; }
 
 .phase-selector {
   margin: 128px 0;
