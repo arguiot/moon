@@ -38,7 +38,7 @@ var lightAngle = 1.75
 function render() {
     goToAngle(lightAngle)
     animateToPhase(curPhase)
-    phaseMoon.rotation.y -= .0005
+    phaseMoon.rotation.y = 1.8
     phaseRenderer.render(phaseScene, phaseCamera)
     
     moon.rotation.x -= .00005
