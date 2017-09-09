@@ -33,7 +33,7 @@ function goToAngle(theta) {
 
 requestAnimationFrame(render)
 
-var lightAngle = 1.75
+var lightAngle = -1.75
 
 function render() {
     goToAngle(lightAngle)
@@ -48,22 +48,35 @@ function render() {
 }
 
 function animateToPhase(n) {
-    var phasesLightAngle = [
-        -3.14,
-        -2.3,
-        -1.75,
-        -.94,
-        0,
-        .94,
-        1.75,
-        2.3,
-        3.14,
-    ];
+    var phasesLightAngle = {
+        southern: [
+            -3.14,
+            -2.3,
+            -1.75,
+            -.94,
+            0,
+            .94,
+            1.75,
+            2.3,
+            3.14,
+        ],
+        northern: [
+            3.14,
+            2.3,
+            1.75,
+            .94,
+            0,
+            -.94,
+            -1.75,
+            -2.3,
+            -3.14,
+        ]
+    };
     var round = function(x) {
         p = 1000
         return Math.round(x * p) / p
     }
-    var angle = phasesLightAngle[n]
+    var angle = phasesLightAngle[hemisphere][n]
     var rate = round((Math.abs(angle - lightAngle))/25.13)
 
     if (lightAngle > angle) {

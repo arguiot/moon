@@ -19,8 +19,9 @@ var scene = new THREE.Scene();
 function loadTextures() {
     var loader = new THREE.TextureLoader()
     
-    moonColor = loader.load('/moon/img/moon-color-patched-2048.jpg')
-    moonNormal = loader.load('/moon/img/moon-normal-1024.jpg')
+    moonColor   = loader.load('/moon/img/moon-color-patched-2048.jpg')
+    moonNormal  = loader.load('/moon/img/moon-normal-1024.jpg')
+    moonBlurMap = loader.load('/moon/img/moon-blur.png')
 }
 
 loadTextures()
@@ -34,6 +35,15 @@ var moonM = new THREE.MeshStandardMaterial({
 var moon  = new THREE.Mesh(moonG, moonM);
 moon.position.set(0, -80, -95)
 scene.add(moon);
+
+var moonBlurG = new THREE.PlaneGeometry(200, 80);
+var moonBlurM = new THREE.MeshBasicMaterial({
+    map: moonBlurMap,
+    transparent: true
+})
+var moonBlur = new THREE.Mesh(moonBlurG, moonBlurM);
+moonBlur.position.set(0, -10, -95)
+scene.add(moonBlur)
 
 var light = new THREE.PointLight(0xfff0e8, 1.8);
 light.position.set(0, 100, -160)
