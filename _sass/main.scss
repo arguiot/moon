@@ -454,8 +454,8 @@ main {
     .phase-selector button:nth-child(2n) {
         display: none;
     }
-    .phase-selector button {
-        margin-right: 70px;
+    .phase-selector[data-hemisphere="southern"] button, .phase-selector[data-hemisphere="northern"] button {
+        margin-right: 65px;
         &::before {
             width: 80px;
             right: -80px;
@@ -473,7 +473,7 @@ main {
 }
 
 @media (max-width: 575px) {
-    .phase-selector button {
+    .phase-selector[data-hemisphere="southern"] button, .phase-selector[data-hemisphere="northern"] button {
         margin-right: 45px;
         &::before {
             width: 60px;
@@ -500,7 +500,7 @@ main {
         margin-bottom: 24px;
     }
 
-    .phase-selector button {
+    .phase-selector[data-hemisphere="southern"] button, .phase-selector[data-hemisphere="northern"] button {
         margin-right: 20px;
         &::before {
             width: 30px;
@@ -509,6 +509,10 @@ main {
     }
     #phases {
         height: 300px;
+    }
+
+    main h1 small {
+        display: block;
     }
 }
 
