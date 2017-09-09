@@ -64,7 +64,7 @@ function animateToPhase(n) {
         return Math.round(x * p) / p
     }
     var angle = phasesLightAngle[n]
-    var rate = .01
+    var rate = round((Math.abs(angle - lightAngle))/25.13)
 
     if (lightAngle > angle) {
         lightAngle -= rate
