@@ -45,8 +45,8 @@ var moonBlur = new THREE.Mesh(moonBlurG, moonBlurM);
 moonBlur.position.set(0, -10, -95)
 scene.add(moonBlur)
 
-var light = new THREE.PointLight(0xfff0e8, 1.8);
-light.position.set(0, 100, -160)
+var light = new THREE.PointLight(0xfff0e8, 2.8);
+light.position.set(0, 1000, -1200)
 scene.add(light)
 
 function resize() {
