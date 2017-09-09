@@ -15,7 +15,7 @@ var phaseMoonG = new THREE.IcosahedronGeometry(100, 3)
 var phaseMoonM = new THREE.MeshStandardMaterial({
     map: moonColor,
     normalMap: moonNormal,
-    normalScale: new THREE.Vector3( 0.05, 0.05 ),
+    normalScale: new THREE.Vector3( 0.15, 0.15 ),
     roughness: 1
 });
 var phaseMoon  = new THREE.Mesh(phaseMoonG, phaseMoonM);
