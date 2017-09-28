@@ -1,6 +1,6 @@
+---
+---
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
-
-// sass --watch _sass/main.scss:css/main.css
 
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -101,6 +101,9 @@ textarea {
 
 body {
     background-color: #0a0b0c;
+    // background-image: url('/moon/img/cross.svg');
+    // background-attachment: fixed;
+    // background-size: cover;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     overflow-x: hidden;
@@ -185,170 +188,11 @@ main {
     }
 }
 
-#swap-hems {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin: 0;
-    font-size: inherit;
-    color: inherit;
-    position: relative;
-    top: 6px;
-    cursor: pointer;
-    outline: 0;
-}
-
-.phase-selector[data-hemisphere="southern"] {
-    margin: 128px 0;
-    text-align: center;
-    button {
-        box-sizing: border-box;
-        display: inline-block;
-        height: 32px;
-        width: 32px;
-        background-color: transparent;
-        border: 3px solid #fff;
-        border-radius: 100%;
-        margin-right: 79px;
-        position: relative;
-        cursor: pointer;
-        background-color: #000;
-        outline: 0;
-        &::before {
-            content: '';
-            height: 3px;
-            width: 90px;
-            position: absolute;
-            right: -90px;
-            background-color: #fff;
-            z-index: -1;
-        }
-        &:last-child {
-            margin-right: 0;
-            &::before {
-                display: none;
-            }
-        }
-        &:nth-child(2) {
-            box-shadow: inset 5px 0 0 #fff;
-        }
-        &:nth-child(8) {
-            box-shadow: inset -5px 0 0 #fff;
-        }
-        &:nth-child(3)::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            right: 50%;
-            left: 0;
-            top: 0;
-            background-color: #fff;
-            border-radius: 50% 0 0 50%;
-        }
-        &:nth-child(7)::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            left: 50%;
-            top: 0;
-            background-color: #fff;
-            border-radius: 0 50% 50% 0;
-        }
-        &:nth-child(4) {
-            background-color: #fff;
-            box-shadow: inset -7px 0 0 #000;
-        }
-        &:nth-child(6) {
-            background-color: #fff;
-            box-shadow: inset 7px 0 0 #000
-        }
-        &:nth-child(5) {
-            background-color: #fff;
-        }
-    }
-}
-
-.phase-selector[data-hemisphere="northern"] {
-    margin: 128px 0;
-    text-align: center;
-    button {
-        box-sizing: border-box;
-        display: inline-block;
-        height: 32px;
-        width: 32px;
-        background-color: transparent;
-        border: 3px solid #fff;
-        border-radius: 100%;
-        margin-right: 79px;
-        position: relative;
-        cursor: pointer;
-        background-color: #000;
-        outline: 0;
-        &::before {
-            content: '';
-            height: 3px;
-            width: 90px;
-            position: absolute;
-            right: -90px;
-            background-color: #fff;
-            z-index: -1;
-        }
-        &:last-child {
-            margin-right: 0;
-            &::before {
-                display: none;
-            }
-        }
-        &:nth-child(8) {
-            box-shadow: inset 5px 0 0 #fff;
-        }
-        &:nth-child(2) {
-            box-shadow: inset -5px 0 0 #fff;
-        }
-        &:nth-child(7)::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            right: 50%;
-            left: 0;
-            top: 0;
-            background-color: #fff;
-            border-radius: 50% 0 0 50%;
-        }
-        &:nth-child(3)::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            left: 50%;
-            top: 0;
-            background-color: #fff;
-            border-radius: 0 50% 50% 0;
-        }
-        &:nth-child(6) {
-            background-color: #fff;
-            box-shadow: inset -7px 0 0 #000;
-        }
-        &:nth-child(4) {
-            background-color: #fff;
-            box-shadow: inset 7px 0 0 #000
-        }
-        &:nth-child(5) {
-            background-color: #fff;
-        }
-    }
-}
-
-#phases {
-    width: 100%;
-    height: 500px;
-    margin: 0 auto;
-}
+@import "phases.scss";
 
 #numbers {
     background-color: #17191c;
-    box-shadow: 0 0 20px 10px #000;
+    // box-shadow: 0 0 20px 10px #000;
     padding: (128px - 32) 0;
     z-index: 5;
     h1 {
@@ -375,13 +219,7 @@ main {
     }
 }
 
-
-
-
-
-
-
-
+@import "footer.scss";
 
 /* ==========================================================================
    Helper classes
@@ -472,25 +310,6 @@ main {
    Modify as content requires.
    ========================================================================== */
 
-@media (max-width: 1200px) {
-    .phase-selector button {
-        margin-right: calc((80vw - (32px*9)) / 9);
-    }
-}
-
-@media (max-width: 960px) {
-    .phase-selector button:nth-child(2n) {
-        display: none;
-    }
-    .phase-selector[data-hemisphere="southern"] button, .phase-selector[data-hemisphere="northern"] button {
-        margin-right: 65px;
-        &::before {
-            width: 80px;
-            right: -80px;
-        }
-    }
-}
-
 @media (max-width: 840px) {
     .share {
         left: 52px;
@@ -501,18 +320,8 @@ main {
 }
 
 @media (max-width: 575px) {
-    .phase-selector[data-hemisphere="southern"] button, .phase-selector[data-hemisphere="northern"] button {
-        margin-right: 45px;
-        &::before {
-            width: 60px;
-            right: -60px;
-        }
-    }
     #numbers h1 {
         font-size: 28px
-    }
-    #phases {
-        height: 400px;
     }
 }
 
@@ -529,17 +338,6 @@ main {
 
     .share > * {
         margin-bottom: 24px;
-    }
-
-    .phase-selector[data-hemisphere="southern"] button, .phase-selector[data-hemisphere="northern"] button {
-        margin-right: 20px;
-        &::before {
-            width: 30px;
-            right: -30px;
-        }
-    }
-    #phases {
-        height: 300px;
     }
 
     main h1 small {

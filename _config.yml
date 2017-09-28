@@ -1,0 +1,10 @@
+# markdown adn highlighter
+markdown:    kramdown
+highlighter: rouge
+
+# permalinks
+permalink:  pretty
+
+# Server
+url:        openspaceblog.github.io
+baseurl:    /moon
