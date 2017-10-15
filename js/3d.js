@@ -62,5 +62,12 @@ function resize() {
   camera.aspect = w / h;
   camera.updateProjectionMatrix();
 }
+function scroll() {
+  // Update camera and renderer
+  const scrollTop = document.body.scrollTop == 0 ? document.documentElement.scrollTop : document.body.scrollTop
+  moon.rotation.x = -scrollTop / 2000;
+}
 
 window.addEventListener('resize', resize)
+
+window.addEventListener('scroll', scroll)

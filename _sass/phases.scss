@@ -39,7 +39,7 @@
         &:last-child {
             margin-right: 0;
             &::before {
-                display: none;
+                opacity: 0;
             }
         }
         &:nth-child(2) {
@@ -110,7 +110,7 @@
         &:last-child {
             margin-right: 0;
             &::before {
-                display: none;
+                opacity: 0;
             }
         }
         &:nth-child(8) {
