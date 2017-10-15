@@ -2,57 +2,55 @@
 layout: html
 ---
 <header>
-    {% include nav.html %}
-    <h1>THE MOON</h1>
-    <h3>Earth's natural satellite</h3>
-    <canvas id="moon"></canvas>
+  {% include nav.html %}
+  <h1>THE MOON</h1>
+  <h3>Earth's natural satellite</h3>
+  <canvas id="moon"></canvas>
 </header>
 <div class="fade"></div>
 <main>
-    {% include phases.html %}
-    <section id="numbers">
-        <div class="grid">
-            <div class="row">
-                <div class="col col-1-of-4 col-m-2-of-4 col-s-4-of-4">
-                    <h1>
-                        384,400 km
-                        <br>
-                        <small>From earth</small>
-                    </h1>
-                </div>
-                <div class="col col-1-of-4 col-m-2-of-4 col-s-4-of-4">
-                    <h1>
-                        29 Days
-                        <br>
-                        <small>One lunar month</small>
-                    </h1>
-                </div>
-                <div class="col col-1-of-4 col-m-2-of-4 col-s-4-of-4">
-                    <h1>
-                        1.622 m/s²
-                        <br>
-                        <small>Lunar gravity</small>
-                    </h1>
-                </div>
-                <div class="col col-1-of-4 col-m-2-of-4 col-s-4-of-4">
-                    <h1>
-                        12 Astronauts
-                        <br>
-                        <small>Walked on the moon</small>
-                    </h1>
-                </div>
-            </div>
+  {% include phases.html %}
+  <section id="numbers">
+    <div class="grid">
+      <div class="row">
+        <div class="col col-1-of-4 col-m-2-of-4 col-s-4-of-4">
+          <h1>
+            384,400 km
+            <br>
+            <small>From earth</small>
+          </h1>
         </div>
-    </section>
-    <section id="lunar-rover">
-        <div class="caption">
-            <p>
-                Eugene A. Cernan driving the Apollo 17 Lunar Roving Vehicle.
-                <br>
-                December 11, 1972
-            </p>
+        <div class="col col-1-of-4 col-m-2-of-4 col-s-4-of-4">
+          <h1>
+            29 Days
+            <br>
+            <small>One lunar month</small>
+          </h1>
         </div>
-    </section>
+        <div class="col col-1-of-4 col-m-2-of-4 col-s-4-of-4">
+          <h1>
+            1.622 m/s²
+            <br>
+            <small>Lunar gravity</small>
+          </h1>
+        </div>
+        <div class="col col-1-of-4 col-m-2-of-4 col-s-4-of-4">
+          <h1>
+            12 Astronauts
+            <br>
+            <small>Walked on the moon</small>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="lunar-rover">
+    <div class="caption">
+      <p>
+        Eugene A. Cernan driving the Apollo 17 Lunar Roving Vehicle.
+      </p>
+    </div>
+  </section>
 </main>
 
 {% include footer.html %}
