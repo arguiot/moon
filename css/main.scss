@@ -308,6 +308,31 @@ main {
   .menu-button {
     right: 52px;
   }
+
+  #lunar-rover {
+    border: none;
+
+    .caption {
+      position: absolute;
+      box-sizing: content-box;
+      left: 0;
+      transform: rotateZ(0deg);
+      display: block;
+      top: auto;
+      height: auto;
+      max-width: 60%;
+      padding: 0 16px 0 64px;
+      width: auto;
+      opacity: 1;
+      background-color: rgba(#000,.8);
+      bottom: 32px;
+
+      p {
+        text-align: left;
+        width: auto;
+      }
+    }
+  }
 }
 @media (max-width: 575px) {
   #numbers h1 {

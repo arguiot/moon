@@ -160,7 +160,7 @@
 }
 
 @media (max-width: 1200px) {
-    .phase-selector button {
+    .phase-selector[data-hemisphere="southern"] button, .phase-selector[data-hemisphere="northern"] button {
         margin-right: calc((80vw - (32px*9)) / 9);
     }
 }
