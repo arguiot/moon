@@ -1,23 +1,19 @@
 ---
 ---
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
-
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
-   html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
 }
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -27,212 +23,212 @@
  *
  * Customize the background color to match your design.
  */
-
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
-
 /*
  * A better looking default horizontal rule
  */
-
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
-
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
-
 audio,
 canvas,
 iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
-
 /*
  * Remove default fieldset styles.
  */
-
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
-
 /*
  * Allow only vertical resizing of textareas.
  */
-
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
-
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
-
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 body {
-    background-color: #0a0b0c;
-    // background-image: url('/moon/img/cross.svg');
-    // background-attachment: fixed;
-    // background-size: cover;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    overflow-x: hidden;
-    a {
-        color: inherit;
-    }
+  background-color: #0a0b0c;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
+
+  a {
+    color: inherit;
+  }
 }
 
 .share {
-    font-size: 24px;
-    position: fixed;
-    left: 144px;
-    top: 52px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    > * {
-        margin-bottom: 32px;
-        text-decoration: none;
-    }
+  font-size: 24px;
+  position: fixed;
+  left: 144px;
+  top: 52px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  > * {
+    margin-bottom: 32px;
+    text-decoration: none;
+  }
 }
 
 .menu-button {
-    position: fixed;
-    right: 144px;
-    top: 52px;
-    font-size: 24px;
-    z-index: 900;
-    * {
-        text-decoration: none;
-    }
+  position: fixed;
+  right: 144px;
+  top: 52px;
+  font-size: 24px;
+  z-index: 900;
+
+  * {
+    text-decoration: none;
+  }
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 66.67vh;
-    flex-direction: column;
-    text-align: center;
-    position: relative;
-    margin-bottom: 600px;
-    h1 {
-        font-size: 72px;
-        font-weight: 400;
-        margin: 0;
-        line-height: (10 / 7);
-    }
-    h3 {
-        font-size: 32px;
-        font-weight: 400;
-        margin: 0;
-        line-height: (10 / 7);
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 66.67vh;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  margin-bottom: 600px;
 
-    #moon {
-        height: 600px;
-        width: 100vw;
-        position: absolute;
-        bottom: -600px;
-    }
+  h1 {
+    font-size: 72px;
+    font-weight: 400;
+    margin: 0;
+    line-height: (10 / 7);
+  }
+
+  h3 {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0;
+    line-height: (10 / 7);
+  }
+
+  #moon {
+    height: 600px;
+    width: 100vw;
+    position: absolute;
+    bottom: -600px;
+  }
 }
 
 .fade {
-    height: 100px;
-    width: 100vw;
-    background: linear-gradient(to bottom, #000000 0%,#0a0b0c 100%);
+  height: 100px;
+  width: 100vw;
+  background: linear-gradient(to bottom, #000000 0%,#0a0b0c 100%);
 }
 
 main {
-    h1 {
-        font-weight: 400;
-        font-size: 32px;
-        margin: 128px 0;
-        small {
-            font-size: 60%;
-            opacity: 0.8;
-        }
-    }
-    h2 {
-        font-weight: 400;
-    }
-}
+  h1 {
+    font-weight: 400;
+    font-size: 32px;
+    margin: 128px 0;
 
+    small {
+      font-size: 60%;
+      opacity: 0.8;
+    }
+  }
+
+  h2 {
+    font-weight: 400;
+  }
+}
 @import "phases.scss";
 
 #numbers {
-    background-color: #17191c;
-    // box-shadow: 0 0 20px 10px #000;
-    padding: (128px - 32) 0;
-    z-index: 5;
-    h1 {
-        margin: 32px 0;
-    }
+  background-color: #17191c;
+  padding: (128px - 32) 0;
+  z-index: 5;
+
+  h1 {
+    margin: 32px 0;
+  }
 }
 
 #lunar-rover {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-image: url('/moon/img/lunar-rover.jpg');
-    background-position: center;
-    background-size: cover;
-    z-index: 2;
-    .caption {
-        position: absolute;
-        bottom: 32px;
-        left: 0;
-        padding-left: 64px;
-        padding-right: 16px;
-        max-width: 60%;
-        background-color: rgba(#000000, .8);
+  position: relative;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  border: 120px solid #17191c;
+  border-top: none;
+  border-bottom: none;
+  background-image: url('/moon/img/lunar-rover.jpg');
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+
+  .caption {
+    position: absolute;
+    box-sizing: border-box;
+    left: -120px;
+    transform-origin: top left;
+    transform: rotateZ(-90deg);
+    height: 120px;
+    align-items: center;
+    display: flex;
+    top: 100vh;
+    padding: 0 64px;
+    width: 100vh;
+    opacity: 0.75;
+
+    p {
+      text-align: center;
+      width: 100vh;
     }
+  }
 }
-
 @import "footer.scss";
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
 /*
  * Hide visually and from screen readers
  */
-
 .hidden {
-    display: none !important;
+  display: none !important;
 }
-
 /*
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -241,47 +237,42 @@ main {
  *    causes content to wrap 1 word per line:
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
-
 .visuallyhidden {
-    border: 0;
-    -webkit-clip-path: inset(50%);
-    clip-path: inset(50%);
-    display: inline-block;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    width: 1px;
-    white-space: nowrap; /* 1 */
+  border: 0;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  display: inline-block;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  width: 1px;
+  white-space: nowrap;
+  /* 1 */
 }
-
 /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    -webkit-clip-path: none;
-    clip-path: none;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-    white-space: inherit;
+  clip: auto;
+  -webkit-clip-path: none;
+  clip-path: none;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
 }
-
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
-
 /*
  * Clearfix: contain floats
  *
@@ -293,137 +284,128 @@ main {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.clearfix:after,
+.clearfix:before {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
-
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
 @media (max-width: 840px) {
-    .share {
-        left: 52px;
-    }
-    .menu-button {
-        right: 52px;
-    }
-}
+  .share {
+    left: 52px;
+  }
 
+  .menu-button {
+    right: 52px;
+  }
+}
 @media (max-width: 575px) {
-    #numbers h1 {
-        font-size: 28px
-    }
+  #numbers h1 {
+    font-size: 28px;
+  }
 }
-
 @media (max-width: 480px) {
-    header {
-        h1 {
-            font-size: 48px;
-            margin-top: 20vh;
-        }
-        h3 {
-            font-size: 24px;
-        }
+  header {
+    h1 {
+      font-size: 48px;
+      margin-top: 20vh;
     }
 
-    .share > * {
-        margin-bottom: 24px;
+    h3 {
+      font-size: 24px;
     }
+  }
 
-    main h1 small {
-        display: block;
-    }
+  .share > * {
+    margin-bottom: 24px;
+  }
+
+  main h1 small {
+    display: block;
+  }
 }
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
-
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-
 @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+  *,
+  *:after,
+  *:before {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+  pre {
+    white-space: pre-wrap !important;
+  }
 
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
+  blockquote,
+  pre {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
+  thead {
+    display: table-header-group;
+  }
 
-    thead {
-        display: table-header-group;
-    }
+  img,
+  tr {
+    page-break-inside: avoid;
+  }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+  h2,
+  h3,
+  p {
+    orphans: 3;
+    widows: 3;
+  }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
