@@ -1,5 +1,8 @@
 var moonColor;
 var moonNormal;
+var phaseMoonColor;
+var phaseMoonNormal;
+var moonBlurMap;
 
 var cnvs = document.getElementById('moon')
 
@@ -19,9 +22,11 @@ var scene = new THREE.Scene();
 function loadTextures() {
   var loader = new THREE.TextureLoader()
 
-  moonColor   = loader.load('/moon/img/moon-color-min.jpg')
-  moonNormal  = loader.load('/moon/img/moon-normal-min.jpg')
-  moonBlurMap = loader.load('/moon/img/moon-blur.png')
+  moonColor       = loader.load('/moon/img/moon-color-min.jpg')
+  phaseMoonColor  = loader.load('/moon/img/moon-color-2048.jpg')
+  phaseMoonNormal = loader.load('/moon/img/moon-normal-2048.jpg')
+  moonNormal      = loader.load('/moon/img/moon-normal-min.jpg')
+  moonBlurMap     = loader.load('/moon/img/moon-blur.png')
 }
 
 loadTextures()
