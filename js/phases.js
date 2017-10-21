@@ -44,7 +44,9 @@ function render() {
   phaseMoon.rotation.y = 1.8
   phaseRenderer.render(phaseScene, phaseCamera)
 
-  moon.rotation.x -= .00005
+  var run = window.innerHeight * 2/3 + 800
+  var rot = -1.2/run * window.scrollY + 3.7
+  moon.rotation.x = rot
   renderer.render(scene, camera);
 
   requestAnimationFrame(render)
