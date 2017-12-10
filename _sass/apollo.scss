@@ -1,0 +1,29 @@
+#apollo {
+  img.badge {
+    width: 100%;
+  }
+  div.col-3-of-4 p {
+    padding-left: 32px;
+  }
+  blockquote {
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    cite {
+      display: block;
+      font-size: 24px;
+      font-weight: 400;
+      font-style: normal;
+      opacity: .6;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  #apollo blockquote {
+    font-size: 24px;
+    cite {
+      font-size: 18px;
+    }
+  }
+}
