@@ -32,3 +32,5 @@ document.getElementById('swap-hems').addEventListener('click', function() {
   document.getElementById('hemisphere').innerHTML = hemisphere;
   document.querySelector('.phase-selector').setAttribute('data-hemisphere', hemisphere);
 })
+
+var slider = new Slider('.bgi')

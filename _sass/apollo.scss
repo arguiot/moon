@@ -17,6 +17,10 @@
       opacity: .6;
     }
   }
+
+  .grid {
+    margin-bottom: 128px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -27,3 +31,5 @@
     }
   }
 }
+
+@import "apollo-slider.scss";
